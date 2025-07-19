@@ -1,0 +1,20 @@
+ let y const son mas restrictivas, depente de donde se pongan son globales o locales y hay que evitar utilizar VAR
+ Capturar datos: promt() se pueden capturar datos por teclado 
+ mostrar datos: cosole.log() o aler()
+ datos de proceso:Toda operación matematica o lógica que vayamos a aplicar 
+ Variables JavaScript; 
+ tipo de variable:let, const o var
+ tipo de datos:
+ 1: number: cualquier número
+ 2: string: cualquier letra, palabra o frase
+ 3: null: es la definición de algo pero está vacio
+ 4: undefined: La utilizacón de una variable o contenido que no existe 
+ 5: object: Objetos y arreglos 
+ 6: "Nan" (Not at number) 
+ 7: Boleano: Valores lógicos que van a ser falso o verdadero
+
+ typeof:
+ parseo: 
+ isNaN:
+
+ NOTA: TODO DATO INGRESADO POR TECLADO (PRONT O FORMULARIOS)  !!!!!!!SIEMPRE¡¡¡¡¡¡ TENDRÁN UN TIPO DE DATO STRING

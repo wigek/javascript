@@ -1,0 +1,10 @@
+var numero = 3
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
+console.log()
