@@ -18,3 +18,15 @@
  isNaN:
 
  NOTA: TODO DATO INGRESADO POR TECLADO (PRONT O FORMULARIOS)  !!!!!!!SIEMPRE¡¡¡¡¡¡ TENDRÁN UN TIPO DE DATO STRING
+
+ SE RECOMIENDA hacer un parseo de datos siempre y cuando se involucre una operación matemática
+
+ Parseo: El proceso de tranformación de un tipo de datos a otro (string a numero)
+ Parseo de datos:
+ String a numero:
+ -Number():
+ -parseInt():
+ -parseFloat():
+ numero a string:
+ -String():
+ -toString():
