@@ -168,11 +168,68 @@ let numeroDos= Number(prompt("Ingresa el número dos:"));  el number suma tanto 
 // Hola, me llamo Juan y tengo 25 años
 // Verifica que la edad sea numérica.
 
-let nom= prompt("Ingresa tú nombre");
-let edad= prompt("Ingresa tu edad");
+// let nom= prompt("Ingresa tú nombre");
+// let edad= prompt("Ingresa tu edad");
 
-if(Number(ed)){
-    console.log("Ingresa una edad válida");
-}else{
-    console.log("hola,  me llamo "+ nom +" y tengo "+ ed);
+// if(Number(ed)){
+//     console.log("Ingresa una edad válida");
+// }else{
+//     console.log("hola,  me llamo "+ nom +" y tengo "+ ed);
+// }
+
+// Ejercicio 15: Extracción de enteros
+// Solicita un número decimal, y muestra su versión entera utilizando parseInt().
+
+// let Numero= prompt("Ingresa un número dedimal");
+// console.log(parseInt(Numero));
+// console.log("Tú número vuelto a numero entero es"+ parseInt(Numero)); // acá lo que hice fuera del ejercicio es que tambièn imprimí el resultado ya parseado a int
+
+// Ejercicio 16: Validación con parseFloat
+// Pide al usuario el valor de una factura. Usa parseFloat() para convertirlo y muestra el doble del valor en
+// consola.
+// let Factura= prompt("Ingresa el valor de la factura");
+// console.log("El valor de la factura es de: "+ parseFloat(Factura));
+
+// Ejercicio 17: Nombre en mayúsculas y tipo
+// Solicita un nombre al usuario con prompt(). Muestra el nombre en mayúsculas con console.log() y el tipo
+// con typeof.
+// let Nombre= prompt("Ingresa tú nombre en letras minúsculas");
+// console.log("Tú nombre es :"+ Nombre.toLocaleUpperCase()+);
+// console.log(typeof Nombre);
+
+// Ejercicio 18: Declaración dinámica
+// Declara una variable con let cuyo valor venga de prompt(), luego vuelve a asignarle otro valor. Muestra
+// let Hola= prompt("Ingresa cualquier cosa");
+// Hola= "Te la cambie haciendo una declaración dinámica"
+// console.log(Hola);
+
+// Ejercicio 19: Conversión fallida
+// Pide al usuario un valor imposible de convertir a número (por ejemplo, "hola mundo") y analiza con
+// isNaN() si se puede procesar.
+// let Numero= prompt("Ingresa cualquier string");
+// if (isNaN(Number(Numero))){
+//     console.log("Efectivamente no se puede convertir a un número")
+// }else{
+//     console.log("Es un número")
+// }
+// console.log(Number(Numero));
+
+// Ejercicio 20: Resumen completo
+// Pide al usuario nombre, edad y estatura.
+// • Usa typeof para cada uno
+// • Verifica que edad y estatura sean válidas (isNaN)
+// • Muestra todo en console.log() como resumen final
+let Nombre= prompt("Ingresa tú nombre");
+let Edad= prompt("Ingresa tú edad");
+let Estatura= prompt("Ingresa tú estatura");
+
+if (isNaN(Edad)){
+    console.log("Ingresa una edad correcta")
 }
+if (isNaN(Estatura)){
+    console.log("Ingresa una estatura válida")
+}
+console.log("Tú nombre es: " + Nombre + "con una edad de "+ Edad+ "y una estarura de: "+ Estatura);
+console.log(typeof Nombre);
+console.log(typeof Edad);
+console.log(typeof Estatura);
