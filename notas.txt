@@ -31,4 +31,28 @@
  -String():
  -toString():
 
+ Operadores aritéticos:
+ ** potencia
+ % mòdulo
+ Incrementar:
+ console.log(++a); incrementa el valor en uno 
+ console.log(a++); imprime el valor de a que anteriormente lo incrementamos en uno y le suma otro màs
+ console.log(a); acá muestra el valor incrementado en 2
+ Decrementar
+  console.log(--a); 
+ console.log(a--); 
+ console.log(a); 
  
+ Operadores de asignación:
+ a+= 5; acá decido en cuanto queremos incrementarlo, en lo anteior solo era de uno en uno.
+ Operadores de comparación:
+ == es igual
+ != distinto 
+
+ Operadores lógcios:
+ AND-&&
+ OR- || // está la saco con el alt124
+ NOT- !
+
+ short-circuit:
+ Falso- false,0,'',null, undefined, NaN
