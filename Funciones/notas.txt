@@ -1,0 +1,18 @@
+Funciones -> Agrupacion de un bloque decodigo que pueda usarse cuando quiera la cantidad de veces que se desee 
+
+--divide y venceras--
+
+
+hoisting -> elevar una variable al ambito global
+callstack -> cola de ejecucion
+
+1 - Funcion Regular o tradicional
+    - Funciones declarativas: es una funcion que tiene una declaracion de contenido "Global". Son funciones que se elevan a un ambito global
+    - Funciones de expresión: es una funcion anonima asignada a una variable
+2 - Funcion Flecha 
+    - Funcion de expresión
+3 - Función anónima (call back)
+
+Nota: las funciones regulares y funciones flecha siempre deeben tener una definicion y una invocacion.
+Nota: TODAS las funciones pueden tener un retorno, y solo se pueden retornar un unico valor
+Nota: el retorno es el valor que tiene la variable, no la variable
