@@ -91,46 +91,48 @@ validaciones:
 //     }
 // }
 
-let cantidadHoras = Number(prompt('Ingrese las horas trabajadas: '))
-let valorHoras = Number(prompt('Ingrese el valor de las horas trabajadas: '))
-let salarioBruto = calcularSalarioBruto()
-let cantidadHorasExtras = calcularHorasExtras()
-let valorHorasExtras = calcularValorExtras()
-let valorDeducciones = calcularDeducciones(salarioBruto)
+let valorHora = Number(prompt("Ingrese el valor de la hora: "));
+let cantidadHoras = Number(prompt("Ingrese la cantidad de horas laboradas: "));
 
-
-
-function calcularSalarioBruto(){
-    if (cantidadHoras > 44){
-        return 44 * valorHoras
-    }
-    else{
-        return cantidadHoras * valorHoras
-    }
+function calcularSalarioBruto() {
+  if (cantidadHoras > 44) {
+    return 44 * valorHora;
+  } else {
+    return valorHora * cantidadHoras;
+  }
 }
 
-function calcularHorasExtras(){
-    if (cantidadHoras <= 44)
-        return 0
-    else{
-        return cantidadHoras - 44
-    }
-}
-
-function calcularValorExtras(){
-    return valorHoras * 1.25 * cantidadHorasExtras
+function cantidadHorasExtras() {
+  if (cantidadHoras > 44) {
+    return cantidadHoras - 44;
+  } else {
+    return 0;
+  }
 }
 
 
+let salarioBruto = calcularSalarioBruto();
+let numeroHorasExtras = cantidadHorasExtras();
+let deducciones= salarioBruto*0.08;
 
-let calcularSalarioNeto = (salarioBruto,deducciones, auxilio, salarioExtra) => {
-    return salarioBruto + salarioExtra - deducciones + auxilio
+function calcularValorHorasExtras() {
+  return valorHora * 1.25 * numeroHorasExtras;
 }
 
-function calcularDeducciones(salarioBruto){
-    return salarioBruto * 0.8
+function calcularAuxilioTransporte(){
+  if (salarioBruto>1423500*2){
+      return 0;
+  }
+  return 200000;
 }
 
+let valorAuxulioTransporte= calcularAuxilioTransporte();
+
+function salarioNetoEmpleado(){
+  console.log(`Colilla de pago \n Salario bruto: ${salarioBruto} \nAuxulio de transporte: ${valorAuxulioTransporte}\n 
+    deduccion por salud: ${deducciones/2}\n Deduccion por pension: ${deducciones/2}\n Valor por horas extras: 
+    ${calcularValorHorasExtras()}\n Salario neto: ${salarioBruto-deducciones+valorAuxulioTransporte+ calcularValorHorasExtras()} `);
+}
 
 
 
